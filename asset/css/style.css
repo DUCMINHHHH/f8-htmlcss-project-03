@@ -57,7 +57,7 @@ a {
 /* HEADER */
 .header {
   background: var(--bg-color);
-  height: 100vh;
+  /* height: ; */
 }
 
 /* navbar */
@@ -68,7 +68,7 @@ a {
   padding: 30px 0 8px;
 }
 
-.header-fixed {
+.header__fixed {
   position: sticky;
   top: -22px;
   z-index: 1;
@@ -117,9 +117,15 @@ a {
 
 /* hero */
 .hero {
-  margin-top: 68px;
+  padding-top: 68px;
+  background: var(--bg-color);
+}
+
+.hero__body {
   display: flex;
   align-items: center;
+  padding-bottom: 300px;
+  height: 100vh;
 }
 
 .hero__content {
@@ -160,16 +166,16 @@ a {
   justify-content: flex-end;
   width: 56%;
 }
-.hero__img {
+.hero__img.first {
+  position: relative;
   width: 330px;
   height: 540px;
-  object-fit: cover;
-  border-radius: 6px;
+  margin-right: -6px;
 }
 
-.hero__img.second {
+.hero__img {
   width: 210px;
   height: 410px;
-  z-index: -1;
-  margin-left: -6px;
+  object-fit: cover;
+  border-radius: 6px;
 }
