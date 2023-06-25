@@ -235,7 +235,7 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  color: #10375c;
+  color: var(--bg-color);
   background: #eff6fd;
 }
 
@@ -245,7 +245,7 @@ a {
 }
 
 .service-item__title a {
-  color: #10375c;
+  color: var(--bg-color);
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -302,7 +302,7 @@ a {
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 1.4;
-  color: #10375c;
+  color: var(--bg-color);
 }
 
 .how-it-works-item__desc {
@@ -414,7 +414,7 @@ a {
   font-size: 1.6rem;
   line-height: 1.75;
   font-weight: 800;
-  color: #10375c;
+  color: var(--bg-color);
   cursor: pointer;
 }
 
@@ -450,4 +450,50 @@ a {
   color: #fff;
   background: #2e80ce;
   border: none;
+}
+
+/* APP */
+.install-app {
+  padding-top: 265px;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 427px;
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+
+.app__image {
+  display: block;
+  width: 284px;
+  height: 522px;
+  margin-top: -95px;
+  object-fit: cover;
+}
+
+.app__content {
+  width: 586px;
+}
+
+.app__heading {
+  text-align: start;
+  color: #fff;
+  width: 489px;
+}
+
+.app__desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.install-row {
+  display: flex;
+  margin-top: 38px;
+  gap: 28px;
 }
