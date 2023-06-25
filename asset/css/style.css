@@ -261,3 +261,66 @@ a {
 .service__btn {
   margin-top: 55px;
 }
+
+/* HOW IT WORKS */
+.works {
+  padding: 100px 0 116px;
+  background: #f6fbff;
+}
+
+.how-it-works__heading {
+  text-align: start;
+}
+
+.how-it-works__desc {
+  margin-top: 18px;
+  width: 468px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.how-it-works__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 70px;
+}
+
+.how-it-works__item {
+  padding: 43px;
+  background: #fff;
+  border: 13px solid #eaf6ff;
+  border-radius: 4px;
+}
+
+.how-it-works__item:hover {
+  border: 13px solid #2e80ce;
+}
+
+.how-it-works__title {
+  margin-top: 18px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #10375c;
+}
+
+.how-it-works-item__desc {
+  margin-top: 28px;
+  width: 254px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.how-it-works__learn-more {
+  display: block;
+  margin-top: 18px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #575f66;
+}
+
+.how-it-works__learn-more:hover {
+  color: #2e80ce;
+}
