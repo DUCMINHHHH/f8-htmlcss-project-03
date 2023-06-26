@@ -593,3 +593,39 @@ a {
   color: #10375c;
   font-weight: 600;
 }
+
+/* APPOINTMENT */
+.appointment {
+  padding-top: 170px;
+}
+
+.appointement___inner {
+  background: #f6fbff;
+  padding: 100px 179px;
+  text-align: center;
+}
+
+.appointment__heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.appointment__heading::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  content: "";
+  width: 136px;
+  height: 3px;
+  background: #2e80ce;
+}
+
+.appointment__desc {
+  margin: 18px auto 36px;
+  width: 617px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
