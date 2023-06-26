@@ -12,6 +12,11 @@ body {
   font-family: "Sora", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* COMMON */
 .container {
   width: 1170px;
@@ -528,6 +533,7 @@ a {
 
 .all__blog:hover {
   text-decoration-line: underline;
+  text-underline-offset: 5px;
 }
 
 .news__chevron-btn {
@@ -540,7 +546,6 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  width: 48%;
 }
 
 .news__item {
@@ -628,4 +633,125 @@ a {
   width: 617px;
   font-size: 1.6rem;
   line-height: 1.75;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: var(--bg-color);
+  font-family: Open Sans;
+}
+
+.footer__row {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 75px;
+}
+
+.footer-column__desc {
+  margin-top: 20px;
+  width: 330px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #a9b3bb;
+  cursor: pointer;
+}
+
+.footer-column__heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #fff;
+}
+
+.footer-column__heading.second {
+  margin-top: 24px;
+}
+
+.footer-column__item:first-child {
+  margin-top: 20px;
+}
+
+.footer-column__item {
+  margin-top: 10px;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.footer__social {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #2e80ce;
+  background: #fff;
+}
+
+.social__icon:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+
+.footer__subscribe {
+  margin-top: 20px;
+  width: 277px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.footer__form {
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer-form__input {
+  padding: 0 10px;
+  width: 212px;
+  height: 46px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  color: #fff;
+  background: transparent;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.footer__btn {
+  margin-left: 12px;
+  min-width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.footer__copyright {
+  margin-top: 28px;
+  padding: 28px 0 42px;
+  border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
 }
